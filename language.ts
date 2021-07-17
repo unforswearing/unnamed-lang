@@ -115,8 +115,8 @@ function readVariable(token) {
 let _LANG = {
   METHODS: {
     when: (expression: string): Boolean => {return},
-    math: (expression: string): Number => {return},
-    list: (expression?: string): Object => {return {}},
+    math: (expression: Number): Number|Boolean => {return},
+    list: (expression?: string|any): Object => {return {}},
     text: {
       rpl: (str: string, replacer?: string): string => {
         return;
@@ -152,8 +152,8 @@ _LANG.METHODS["when"] = (comparison) => {
   return expression;
 };
 
-_LANG.METHODS["math"] = (expression: string): Number => {
-  if (expression.length > 1) {
+_LANG.METHODS["math"] = (expression: Number): Number|Boolean => {
+  if (expression) {
     // throw function error
   }
 
@@ -163,7 +163,7 @@ _LANG.METHODS["math"] = (expression: string): Number => {
   // can be evaluated.
 
   // @todo need to safely evaluate math
-  let evaluated: Number = eval(expression);
+  let evaluated: Number = eval(expression.toString());
 
   return 0;
 };

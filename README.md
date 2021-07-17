@@ -1,7 +1,9 @@
 # Unnamed lang
 > tentative name: mmpos (mickey mouse piece of shit)
 
-I have been reading a about language design and figured why not try it, inspired by Lua, shell scripting, and many old languages. The english major in me is really enjoying this but none of this is functional yet - I'm slowly picking away at it. 
+I have been reading a about language design and figured why not try it, inspired by Lua, shell scripting, and many old languages. My background includes English language / linguistic studies and building a constructed human langague was on my list for a while, and building a programming language fits the need pretty well. 
+
+This language is currently ~40% implemented. A more formal roadmap forthcoming. 
 
 ## overview
 
